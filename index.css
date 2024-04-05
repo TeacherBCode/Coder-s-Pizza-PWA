@@ -1,0 +1,269 @@
+:root{
+  --w : 360px;
+}
+body {
+  background-color: #45474B;
+  color: whitesmoke;
+  margin: 0;
+  font-family: "Gabriela", serif;
+  min-height: 200vh ;
+} 
+
+.gabriela-regular {
+  font-family: "Gabriela", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gabriela-light {
+  font-family: "Gabriela", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titleHeader{
+  background-image: url('./images/pexels-team-picsfast-8753752.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 20px;
+  margin:0 auto;
+  width: var(--w);
+  color: rgb(10, 6, 2);
+  border: 3px solid #0d2e3b;
+  border-radius: 20px;
+}
+
+.imgOverlay{
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  opacity: 85%;
+}
+
+.title{
+  margin:0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.titlePara{
+  font-weight: 600;
+}
+
+.mainSection{
+  
+  box-sizing: content-box;
+  padding: 10px 20px;
+  margin:0 auto;
+  width: var(--w);
+  background-color: #ebc76e;
+  min-height: 80vh;
+  border: 3px solid #0d2e3b;
+  border-radius: 10px;
+}
+
+
+.itemBox{
+  border-bottom: 5px dotted #495E57;
+  color:#24262a;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+
+.itemName{
+  font-size: 1.5rem;
+  margin:0;
+}
+
+.ingredients{
+  font-size:0.75rem ;
+}
+
+.column1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+
+
+.incBtn{
+  background-image:url('./images/addIcon.png') ;
+  background-size: cover;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(136, 220, 235, 0.598);
+}
+
+.incBtn:hover{
+  border-radius: 5px;
+  background-color: rgb(110, 227, 248);
+  width: 32px;
+  height: 32px;
+}
+
+
+
+/* Order Box  */
+
+.orderBox{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  width: var(--w);
+  padding: 10px 20px 5px;
+  margin:0 auto;
+  background-color: #eec65e;
+  color:#24262a;
+  text-align: center;
+  align-items: center;
+  border: 3px solid #0d2e3b;
+  border-radius: 20px;
+}
+
+.hidden{
+  display:none;
+}
+
+.OrderName{
+  margin:0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.orderPadding{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px auto;
+  color: #45474B;
+}
+
+.nameCapital{
+  text-transform: capitalize;
+}
+
+.orderItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.total{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  border-top: 3px dashed #495E57;
+}
+
+.removeBtn{
+  display:inline;
+  margin-left: 10px;
+  padding: 0 10px;
+  border: none;
+  background-color: #ebc76e;
+  color: rgba(73, 96, 100, 0.977);
+  font-size: 0.85rem;
+}
+
+.removeBtn:hover{
+  background-color: #d6c496;
+  color: rgb(54, 128, 128);
+  font-size: 0.90rem;
+}
+
+.completeOrderBtn{
+  width: 80%;
+  background-color:rgb(110, 227, 248) ;
+  border: 1px solid   ;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 25px auto;
+  font-weight: 700;
+}
+
+.completeOrderBtn:hover{
+  width: 85%;
+  background-color:rgb(166, 194, 199) ;
+  font-size: 1.1rem;
+}
+
+
+
+/* Payment Section */
+
+.paymentBox{
+  position: fixed;
+  top:30%;
+  right:0;
+  left: 0;
+
+  width: var(--w);
+  padding: 40px 20px 10px;
+  margin:0 auto;
+  background-color: #eec65e;
+  color:#24262a;
+  text-align: center;
+  align-items: center;
+  border: 3px solid #0d2e3b;
+  border-radius: 20px;
+}
+
+.closeBtn{
+  position: absolute;
+  right:5px;
+  top:5px;
+}
+
+.totalPayment{
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  border-bottom: 3px dotted #45474B;
+}
+
+.paymentForm{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.paymentDetails{
+  font-size: 1.4rem;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #235a74;
+  width: 80%;
+  text-align: center;
+}
+
+.paymentTitle{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #235a74;
+}
+
+
+
+
+/* Footer Section */
+.footSection{
+  padding: 10px 20px;
+  margin:0 auto;
+  width: var(--w);
+  background-color: #0d2e3b;
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #0d2e3b;
+  border-radius: 20px;
+}

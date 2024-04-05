@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder's Pizza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="titleHeader">
+        <div class="imgOverlay">
+            <h1 class="title"> Coder's Pizza</h1>
+            <p class="titlePara">The best pizzas and burgers in town.</p>
+        </div>
+    </header>
+
+    <main class="mainSection">
+        
+        <div id="menuItems" class="container" >
+            
+            
+        </div>
+        
+    </main>
+    
+    <section id="orderBox" class="orderBox hidden" >
+        <h5 class="OrderName">Your Order</h5>
+        <section id="orderItemsArr">
+            
+        </section>
+        <section>
+            <div class="total" >  
+                <div>
+                    <p>Total amount </p>
+                </div>
+                <p id="totalPrice"></p>
+            </div>
+            <button class="completeOrderBtn" id="completeOrderBtn">
+                Complete Order
+            </button>
+        </section>
+    </section>
+
+    <section id="paymentBox" class="paymentBox hidden" >
+        <div id="paymentCloseBtn" class="closeBtn">
+            <img src="./images/cancel.png" alt="Cancel-Button" width="32px">
+        </div>
+        <p class="totalPayment">Total Amount -----------  
+            <span id="totalPaymentAmt"></span></p>
+        <form class="paymentForm">
+            <label for="userName" class="paymentTitle"> Enter card details:</label>
+            <div class="paymentDetails">
+                <input type="text" id="userName" 
+                placeholder="Enter your name" required />
+            </div>
+            <div class="paymentDetails">
+                <input type="text" id="userCardNum" 
+                placeholder="Enter card number" required />
+            </div>
+            <div class="paymentDetails">
+                <input type="password" id="userCardCVC" 
+                placeholder="Enter CVC" required />
+            </div>
+            <button type="submit" id="paymentBtn" 
+            class="paymentBtn completeOrderBtn">Complete Payment</button>
+        </form>
+        
+    </section>
+
+
+    <footer class="footSection">
+        <div id="footerBox">
+            
+        </div>
+    </footer>
+
+    
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
